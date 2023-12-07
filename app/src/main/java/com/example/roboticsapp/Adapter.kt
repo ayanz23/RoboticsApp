@@ -18,17 +18,20 @@ class Adapter(private val binding: ViewBinding, val robot:List<RobotData>): Recy
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): myViewHolder {
-        var itemView = LayoutInflater.from(parent.context)
-            .inflate(R.layout.view, parent, false)
-        return myViewHolder(binding, itemView)
+        val itemView = ViewBinding.inflate(LayoutInflater.from(parent.context), parent, false)
+        return myViewHolder(itemView, itemView.root)
     }
 
     override fun onBindViewHolder(holder: myViewHolder, position: Int) {
         var dummyImage: Int? = null
-        holder.title.text = robot[position].title
-        holder.galaxy.text = robot[position].galaxy
-        holder.distance.text = robot[position].distance + " m km"
-        holder.gravity.text = robot[position].title + " m/ss"
+        System.out.println("robot[position].title" + robot[position].title)
+        // set the text of the textViews from our data class.
+        holder.title.setText(robot[position].title)
+        holder.galaxy.setText(robot[position].galaxy)
+        holder.distance.setText(robot[position].distance)
+        holder.gravity.setText(robot[position].gravity)
+
+        System.out.println(" What I see " + holder.title.text.toString())
 
         when (robot[position].title!!.toLowerCase()) {
             "mars" -> {
@@ -63,6 +66,8 @@ class Adapter(private val binding: ViewBinding, val robot:List<RobotData>): Recy
             }
         }
         holder.robotimg.setImageResource(dummyImage!!)
+
+        // make holder view update visually
     }
 
     override fun getItemCount(): Int {

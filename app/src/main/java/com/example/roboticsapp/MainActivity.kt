@@ -19,10 +19,9 @@ class MainActivity : AppCompatActivity() {
 
         // Use the correct binding class
         mainBinding = ActivityMainBinding.inflate(layoutInflater)
-        setContentView(mainBinding.root)
-
         mainBinding.myRecycler.adapter = Adapter(binding, setData.SetPlanets())
         mainBinding.myRecycler.layoutManager = LinearLayoutManager(this)
+        setContentView(mainBinding.root)
     }
 
 }
