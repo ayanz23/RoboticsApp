@@ -26,6 +26,13 @@ class Adapter(private val binding: ViewBinding, val robot:List<RobotData>): Recy
         var dummyImage: Int? = null
         System.out.println("robot[position].title" + robot[position].title)
         // set the text of the textViews from our data class.
+        holder.itemView.setOnClickListener{
+            val intent= Intent(holder.itemView.context,RobotDetail::class.java)
+            intent.putExtra("robot",robot[position])
+            intent.putExtra("robotImage",dummyImage)
+            holder.itemView.context.startActivity(intent)
+
+        }
         holder.title.setText(robot[position].title)
         holder.galaxy.setText(robot[position].galaxy)
         holder.distance.setText(robot[position].distance)
@@ -33,7 +40,7 @@ class Adapter(private val binding: ViewBinding, val robot:List<RobotData>): Recy
 
         System.out.println(" What I see " + holder.title.text.toString())
 
-        when (robot[position].title!!.toLowerCase()) {
+        when (robot[position].title!!.lowercase()) {
             "mars" -> {
                 dummyImage = R.drawable.image_editor
             }
