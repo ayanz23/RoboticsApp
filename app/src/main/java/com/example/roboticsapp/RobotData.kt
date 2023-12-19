@@ -6,9 +6,9 @@ import android.os.Parcelable
 data class RobotData(
     val id:Int?,
     val title:String?,
-    val galaxy:String?,
-    val distance:String?,
-    val gravity:String?,
+    val location:String?,
+    val rank:String?,
+    val number:String?,
     val overview:String?
 
 ):Parcelable{
@@ -25,9 +25,9 @@ data class RobotData(
     override fun writeToParcel(parcel: Parcel, flags: Int) {
         parcel.writeValue(id)
         parcel.writeString(title)
-        parcel.writeString(galaxy)
-        parcel.writeString(distance)
-        parcel.writeString(gravity)
+        parcel.writeString(location)
+        parcel.writeString(rank)
+        parcel.writeString(number)
         parcel.writeString(overview)
     }
 

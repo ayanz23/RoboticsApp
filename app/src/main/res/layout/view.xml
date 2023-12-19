@@ -44,7 +44,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:fontFamily="@font/poppins_semibold"
-                    android:text="Earth"
+                    android:text="Parallel Universe"
                     android:textColor="@color/white"
                     android:textSize="23sp"
                     android:textStyle="bold" />
@@ -57,12 +57,12 @@
             </LinearLayout>
 
             <TextView
-                android:id="@+id/galaxy"
+                android:id="@+id/location"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="-7dp"
                 android:fontFamily="@font/poppins_regular"
-                android:text="Milkyway Galaxy"
+                android:text="United States of America"
                 android:textColor="@color/subtext"
                 android:textSize="12sp" />
 
@@ -84,7 +84,7 @@
                     android:src="@drawable/ic_distance"/>
 
                 <TextView
-                    android:id="@+id/distance"
+                    android:id="@+id/rank"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
                     android:layout_marginStart="2dp"
@@ -101,7 +101,7 @@
                     android:src="@drawable/ic_distance"/>
 
                 <TextView
-                    android:id="@+id/gravity"
+                    android:id="@+id/number"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="2dp"
