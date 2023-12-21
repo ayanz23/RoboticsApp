@@ -12,7 +12,7 @@
     <ImageView
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:src="@drawable/image_editor" />
+        android:src="@drawable/robotlogo" />
 
     <TextView
         android:layout_width="wrap_content"

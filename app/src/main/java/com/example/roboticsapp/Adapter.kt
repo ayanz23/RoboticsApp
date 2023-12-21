@@ -45,34 +45,34 @@ class Adapter(private val binding: ViewBinding, val robot:List<RobotData>): Recy
 
         when (robot[position].title!!) {
             "Parallel Universe" -> {
-                dummyImage = R.drawable.image_editor
+                dummyImage = R.drawable.parallel_universe_svg
             }
             "Peddie Robotics" -> {
-                dummyImage = R.drawable.image_editor
+                dummyImage = R.drawable.peddie_svg
             }
             "Mechanical Mustangs" -> {
                 dummyImage = R.drawable.image_editor
             }
             "Krypton Cougars" -> {
-                dummyImage = R.drawable.image_editor
+                dummyImage = R.drawable.krypton_cougars_svg
             }
             "The MidKnight Inventors" -> {
-                dummyImage = R.drawable.image_editor
+                dummyImage = R.drawable.midknight_svg
             }
             "Aperture" -> {
                 dummyImage = R.drawable.image_editor
             }
             "Team 1403 Cougar Robotics" -> {
-                dummyImage = R.drawable.image_editor
+                dummyImage = R.drawable.cougar_robotics_svg
             }
             "The Metal Moose" -> {
-                dummyImage = R.drawable.image_editor
+                dummyImage = R.drawable.metal_moose_svg
             }
             "LUNATECS" -> {
-                dummyImage = R.drawable.image_editor
+                dummyImage = R.drawable.lunatecs_svg
             }
             "The Pascack PI-oneers" -> {
-                dummyImage = R.drawable.image_editor
+                dummyImage = R.drawable.pacack_pioneer_svg
             }
         }
         holder.robotimg.setImageResource(dummyImage!!)
