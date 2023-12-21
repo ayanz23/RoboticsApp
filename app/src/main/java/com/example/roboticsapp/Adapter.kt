@@ -51,7 +51,7 @@ class Adapter(private val binding: ViewBinding, val robot:List<RobotData>): Recy
                 dummyImage = R.drawable.peddie_svg
             }
             "Mechanical Mustangs" -> {
-                dummyImage = R.drawable.image_editor
+                dummyImage = R.drawable.mech
             }
             "Krypton Cougars" -> {
                 dummyImage = R.drawable.krypton_cougars_svg
