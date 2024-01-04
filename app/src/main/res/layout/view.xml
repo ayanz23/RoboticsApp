@@ -81,7 +81,7 @@
                 <ImageView
                     android:layout_width="20dp"
                     android:layout_height="23dp"
-                    android:src="@drawable/ic_distance"/>
+                    android:src="@drawable/rank"/>
 
                 <TextView
                     android:id="@+id/rank"
@@ -89,7 +89,7 @@
                     android:layout_height="match_parent"
                     android:layout_marginStart="2dp"
                     android:fontFamily="@font/poppins_regular"
-                    android:text="54.6m km"
+                    android:text="rank"
                     android:textColor="@color/subtext"
                     android:textSize="12sp"
                     />
@@ -98,7 +98,7 @@
                     android:layout_width="20dp"
                     android:layout_height="23dp"
                     android:layout_marginStart="10dp"
-                    android:src="@drawable/ic_distance"/>
+                    android:src="@drawable/teamnumber"/>
 
                 <TextView
                     android:id="@+id/number"
@@ -106,7 +106,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginStart="2dp"
                     android:fontFamily="@font/poppins_regular"
-                    android:text="3.711 m/ss"
+                    android:text="team number"
                     android:textColor="@color/subtext"
                     android:textSize="12sp"
                     />
