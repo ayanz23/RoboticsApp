@@ -68,7 +68,7 @@ object setData {
         Robotlist.add(
             RobotData(
                 7,
-                "Team 1403 Cougar Robotics",
+                "Cougar Robotics",
                 "Skillman, New Jersey, USA",
                 "6",
                 "1403",
