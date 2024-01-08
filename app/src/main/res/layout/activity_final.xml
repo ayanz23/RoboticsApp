@@ -34,7 +34,7 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="20dp"
                 android:fontFamily="@font/poppins_semibold"
-                android:text="Ohhhhh!"
+                android:text="Beep Boop!"
                 android:textColor="@color/black"
                 android:textSize="22sp"
                 android:textStyle="bold" />
@@ -43,19 +43,20 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
+                android:gravity="center"
                 android:fontFamily="@font/poppins_regular"
-                android:text="your planet is not serviceable"
+                android:text="For more information on the teams and 2024 competition go to:"
                 android:textColor="@color/black"
-                android:textSize="20sp" />
+                android:textSize="15sp" />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="10dp"
                 android:fontFamily="@font/poppins_semibold"
-                android:text="Elon is trying something."
+                android:text="https://www.thebluealliance.com/"
                 android:textColor="@color/black"
-                android:textSize="22sp"
+                android:textSize="15sp"
                 android:textStyle="bold" />
         </LinearLayout>
     </androidx.cardview.widget.CardView>

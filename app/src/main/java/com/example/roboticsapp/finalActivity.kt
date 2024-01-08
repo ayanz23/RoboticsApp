@@ -1,8 +1,11 @@
 package com.example.roboticsapp
 
-import androidx.appcompat.app.AppCompatActivity
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.view.View
+import androidx.appcompat.app.AppCompatActivity
+
 
 class finalActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -10,5 +13,6 @@ class finalActivity : AppCompatActivity() {
         setContentView(R.layout.activity_final)
         window.decorView.apply { systemUiVisibility=
             View.SYSTEM_UI_FLAG_HIDE_NAVIGATION or View.SYSTEM_UI_FLAG_FULLSCREEN }
+
     }
 }
