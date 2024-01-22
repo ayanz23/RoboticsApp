@@ -2,21 +2,49 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center">
+    android:gravity="center"
+    android:padding="16dp">
 
     <EditText
         android:id="@+id/editTeamName"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:hint="Team Name"
-        android:layout_marginBottom="16dp" />
+        android:layout_marginBottom="16dp"
+        android:inputType="textCapWords" />
+
+    <EditText
+        android:id="@+id/editTeamRank"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Team Rank"
+        android:layout_marginBottom="16dp"
+        android:inputType="text" />
 
     <EditText
         android:id="@+id/editTeamNumber"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:hint="Team Number"
-        android:layout_marginBottom="16dp" />
+        android:layout_marginBottom="16dp"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/editTeamLocation"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Team Location"
+        android:layout_marginBottom="16dp"
+        android:inputType="textCapWords" />
+
+    <EditText
+        android:id="@+id/editTeamDescription"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:hint="Team Description"
+        android:gravity="top"
+        android:layout_marginBottom="16dp"
+        android:inputType="textMultiLine" />
 
     <Button
         android:id="@+id/submitTeamButton"
@@ -24,6 +52,7 @@
         android:layout_height="48dp"
         android:text="Submit"
         android:onClick="onSubmitTeamButtonClick"
-        android:layout_marginTop="16dp" />
+        android:backgroundTint="@color/primary"
+    android:layout_marginTop="16dp" />
 
 </LinearLayout>
