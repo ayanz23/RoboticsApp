@@ -5,7 +5,8 @@ import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.roboticsapp.databinding.ActivityMainBinding
 import com.example.roboticsapp.databinding.ViewBinding
-import com.example.roboticsapp.Adapter
+import android.content.Intent
+import android.widget.Button
 
 class MainActivity : AppCompatActivity() {
 
@@ -19,9 +20,14 @@ class MainActivity : AppCompatActivity() {
 
         // Use the correct binding class
         mainBinding = ActivityMainBinding.inflate(layoutInflater)
-        mainBinding.myRecycler.adapter = Adapter(binding, setData.SetPlanets())
+        mainBinding.myRecycler.adapter = Adapter(binding, setData.SetRobots())
         mainBinding.myRecycler.layoutManager = LinearLayoutManager(this)
         setContentView(mainBinding.root)
+
+        val addTeamButton = findViewById<Button>(R.id.addTeamButton)
+        addTeamButton.setOnClickListener {
+            startActivity(Intent(this, AddTeam::class.java))
+        }
     }
 
 }

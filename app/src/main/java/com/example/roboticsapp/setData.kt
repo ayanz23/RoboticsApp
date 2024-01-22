@@ -3,8 +3,9 @@ package com.example.roboticsapp
 import com.example.roboticsapp.RobotData
 
 object setData {
-    fun SetPlanets():List<RobotData>{
-        var Robotlist = mutableListOf<RobotData>()
+    var Robotlist = mutableListOf<RobotData>()
+    fun SetRobots():List<RobotData>{
+
         Robotlist.add(
             RobotData(
                 1,
@@ -108,4 +109,13 @@ object setData {
 
         return Robotlist
     }
+
+    fun getRobotList(): List<RobotData> {
+        return Robotlist
+    }
+
+    fun addRobot(robot: RobotData) {
+        Robotlist.add(robot)
+    }
+
 }
