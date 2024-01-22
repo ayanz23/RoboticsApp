@@ -4,7 +4,7 @@ import com.example.roboticsapp.RobotData
 
 object setData {
     var Robotlist = mutableListOf<RobotData>()
-    fun SetRobots():List<RobotData>{
+    fun SetRobots() {
 
         Robotlist.add(
             RobotData(
@@ -106,16 +106,28 @@ object setData {
                 "The Pascack Pi-oneers, located in Bergen County, New Jersey, are part of the Pascack Valley Regional High School District, which consists of four towns: Hillsdale, River Vale, Montvale and Woodcliff Lake. Students from Hillsdale and River Vale attend Pascack Valley High School, students from Montvale and Woodcliff Lake attend Pascack Hills High School. Team meetings are held at Pascack Hills and through the generous support of the PVRHSD Board of Education, members from Pascack Valley are transported to Pascack Hills by bus. "
             )
         )
+    }
 
-        return Robotlist
+    fun getLastRobotID(): Int {
+        return Robotlist.size + 2
     }
 
     fun getRobotList(): List<RobotData> {
         return Robotlist
     }
 
+    fun reversedRobotList(): List<RobotData> {
+        return Robotlist.reversed()
+    }
+
     fun addRobot(robot: RobotData) {
         Robotlist.add(robot)
+    }
+
+    fun getDataIfNone() {
+        if (Robotlist.size == 0) {
+            SetRobots()
+        }
     }
 
 }

@@ -43,6 +43,7 @@ class Adapter(private val binding: ViewBinding, val robot:List<RobotData>): Recy
 
         System.out.println(" What I see " + holder.title.text.toString())
 
+        dummyImage = R.drawable.image_editor
         when (robot[position].title!!) {
             "Parallel Universe" -> {
                 dummyImage = R.drawable.parallel_universe_svg

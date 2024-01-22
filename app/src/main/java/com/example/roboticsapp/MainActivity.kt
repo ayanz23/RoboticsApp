@@ -20,7 +20,8 @@ class MainActivity : AppCompatActivity() {
 
         // Use the correct binding class
         mainBinding = ActivityMainBinding.inflate(layoutInflater)
-        mainBinding.myRecycler.adapter = Adapter(binding, setData.SetRobots())
+        setData.getDataIfNone()
+        mainBinding.myRecycler.adapter = Adapter(binding, setData.reversedRobotList())
         mainBinding.myRecycler.layoutManager = LinearLayoutManager(this)
         setContentView(mainBinding.root)
 
